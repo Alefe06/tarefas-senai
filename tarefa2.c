@@ -1,13 +1,13 @@
 #include <stdio.h>
 int main (){
-	int velocidade;
-	int distancia;
-	int horas;
-	horas = distancia / velocidade;
+	float velocidade;
+	float distancia;
+	float horas;
 	printf("defina a distancia:");
-	scanf("%d" , &distancia);
+	scanf("%f" , &distancia);
 	printf("defina a velocidade:");
-	scanf("%d" , &velocidade);
-	printf("as horas necessarias serao: %d \n" , horas);
+	scanf("%f" , &velocidade);
+	horas = distancia / velocidade;
+	printf("as horas necessarias serao: %.2f \n" , horas);
 	return 0;
 }
